@@ -8,3 +8,4 @@ btn.addEventListener('click', (e) => {
   activ.classList.toggle('activ')
 
 });
+
