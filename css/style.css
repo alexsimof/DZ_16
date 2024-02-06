@@ -869,6 +869,9 @@ body {
   background-color: #23252F;
 }
 
+.right {
+  margin-bottom: 20px;
+}
 .right-cart {
   display: flex;
   flex-direction: column;
