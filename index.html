@@ -75,8 +75,48 @@
         </div>
 
         <div class="col-md-5 col-lg-4 col-xl-3 header-button">
-          <a href="#" class="header-dash-btn">Dashboard</a>
-          <a href="#" class="header-log-btn">Logout</a>
+          <!-- <a href="#" class="header-dash-btn">Dashboard</a> -->
+          <button type="button" class="header-dash-btn btn-primary" id="liveToastBtn">Dashboard</button>
+
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="...">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                Hello, world! This is a toast message.
+              </div>
+            </div>
+          </div>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="header-log-btn btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Logout
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content header-modal">
+                <div data-bs-theme="dark" class="modal-header">
+                  <h1 class="header-modal-title modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h3 class="header-modal-title">Some content here</h3>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div><!-- /.row -->
     </div><!-- .container -->
@@ -171,7 +211,10 @@
           <div class="left-cart">
             <div class="left-cart-top">
               <p class="left-deposit-txt"><span class="left-deposit">2.4%</span>daily for 30 days</p>
-              <span class="left-btn">Active</span>
+              <button class="left-btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip" data-bs-title="The process has started! Click to stop.">
+                Active
+              </button>
               <span class="left-usd">USD</span>
               <span class="left-inv">+1.000</span>
               <span class="left-totl">10.000.000</span>
@@ -193,7 +236,9 @@
           <div class="left-cart">
             <div class="left-cart-top">
               <p class="left-deposit-txt"><span class="left-deposit">2.4%</span>daily for 30 days</p>
-              <span class="left-btn">Active</span>
+              <button class="left-btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="The process has started! Click to stop.">Active</button>
               <span class="left-usd">USD</span>
               <span class="left-inv">+1.000</span>
               <span class="left-totl">10.000.000</span>
@@ -215,7 +260,10 @@
           <div class="left-cart">
             <div class="left-cart-top">
               <p class="left-deposit-txt"><span class="left-deposit">2.4%</span>daily for 30 days</p>
-              <span class="left-btn left-comp">Completed</span>
+              <button class="left-btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip" data-bs-title="The process is over!">
+                Completed
+              </button>
               <span class="left-usd">USD</span>
               <span class="left-inv">+1.000</span>
               <span class="left-totl">10.000.000</span>
@@ -237,7 +285,10 @@
           <div class="left-cart">
             <div class="left-cart-top">
               <p class="left-deposit-txt"><span class="left-deposit">2.4%</span>daily for 30 days</p>
-              <span class="left-btn left-comp">Completed</span>
+              <button class="left-btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip" data-bs-title="The process is over!">
+                Completed
+              </button>
               <span class="left-usd">USD</span>
               <span class="left-inv">+1.000</span>
               <span class="left-totl">10.000.000</span>
@@ -259,7 +310,10 @@
           <div class="left-cart">
             <div class="left-cart-top">
               <p class="left-deposit-txt"><span class="left-deposit">2.4%</span>daily for 30 days</p>
-              <span class="left-btn left-comp">Completed</span>
+              <button class="left-btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip" data-bs-title="The process is over!">
+                Completed
+              </button>
               <span class="left-usd">USD</span>
               <span class="left-inv">+1.000</span>
               <span class="left-totl">10.000.000</span>
@@ -305,6 +359,61 @@
       </div>
     </div>
   </main>
+  <footer class="footer">
+    <div class="footer-sponsor">
+      <img src="./img/logo-1.png" alt="logo" class="footer-sponsor-img">
+      <img src="./img/logo-2.png" alt="logo" class="footer-sponsor-img">
+      <img src="./img/logo-3.png" alt="logo" class="footer-sponsor-img">
+      <img src="./img/logo-4.png" alt="logo" class="footer-sponsor-img">
+      <img src="./img/logo-5.png" alt="logo" class="footer-sponsor-img">
+      <img src="./img/logo-6.png" alt="logo" class="footer-sponsor-img">
+      <img src="./img/logo-7.png" alt="logo" class="footer-sponsor-img">
+      <img src="./img/logo-8.png" alt="logo" class="footer-sponsor-img">
+      <img src="./img/logo-9.png" alt="logo" class="footer-sponsor-img">
+      <img src="./img/logo-10.png" alt="logo" class="footer-sponsor-img">
+      <img src="./img/logo-11.png" alt="logo" class="footer-sponsor-img">
+      <img src="./img/logo-12.png" alt="logo" class="footer-sponsor-img">
+    </div>
+    <div class="container">
+      <div class="row footer-content">
+        <div class="col-md-3 footer-logo">
+          <a href="/" class="footer-logo-link">
+            <img src="./img/logo.png" alt="Logo" class="footer-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="" class="footer-link">Check our company</a>
+          <p class="footer-text">4517 Washington Ave. Manchester, Kentucky 39495</p>
+        </div>
+        <div class="col-md-2 footer-menu">
+          <a href="" class="footer-menu-item">Home</a>
+          <a href="" class="footer-menu-item">Investment</a>
+          <a href="" class="footer-menu-item">FAQ</a>
+        </div>
+        <div class="col-md-2 footer-menu">
+          <a href="" class="footer-menu-item">Reviews</a>
+          <a href="" class="footer-menu-item">About</a>
+          <a href="" class="footer-menu-item">Contacts</a>
+        </div>
+        <div class="col-md-2 footer-btn">
+          <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+            data-bs-placement="left" data-bs-content="You need to register!">
+            Start Investment
+          </button>
+        </div>
+      </div>
+      <div class="row footer-copyright">
+        <p class="col-md-4 footer-copy">© 2021 Adex Capital Limited. All rights are reserved.</p>
+        <div class="col-md-4 footer-social">
+          <img src="./img/twitt.png" alt="twitter">
+          <img src="./img/fb.png" alt="facebook">
+          <img src="./img/yt.png" alt="youtube">
+          <img src="./img/tg.png" alt="telegram">
+        </div>
+        <p class="col-md-4 footer-copy2">Terms & Conditions Privacy Policy</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
