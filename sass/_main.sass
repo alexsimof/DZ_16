@@ -1,0 +1,244 @@
+
+@mixin text-style()
+  color: rgb(94, 100, 122)
+  font-family: Roboto, sans-serif
+  font-size: 14px
+  font-weight: 500
+  letter-spacing: 0px
+
+@mixin text-menu()
+  color: rgb(255, 255, 255)
+  font-family: Roboto, sans-serif
+  font-size: 16px
+  font-weight: 500
+  line-height: 26px
+  letter-spacing: 0px
+
+body
+  font-family: Roboto, sans-serif
+  font-weight: 500
+  line-height: 38px
+  background: #1B1A1A
+
+.main
+  padding-top: 72px
+
+.left
+  &-title-box
+    margin-bottom: 40px
+  &-title
+    color: rgb(255, 255, 255)
+    font-size: 32px
+  &-text
+    color: rgb(94, 100, 122)
+    font-size: 16px
+    font-weight: 400
+    line-height: 26px
+    letter-spacing: 0px
+    text-align: left
+  &-nav
+    display: flex
+    gap: 50px
+    margin-bottom: 40px
+  &-menu-one, &-menu-two
+    display: flex
+  &-menu-txt
+    @include text-style
+    margin-right: 15px
+  &-menu-link
+    color: rgb(83, 95, 230)
+    font-size: 16px
+    line-height: 26px
+  &-drop-menu
+    padding: 20px 0 20px 20px
+    box-sizing: border-box
+    border-radius: 20px
+    background: rgb(29, 30, 34)
+    border: 1px solid #535FE6FF
+  &-drop-item
+    @include text-menu
+    text-align: left
+    &:hover
+      color: #535FE6
+      background: none
+  &-drop-menu .show
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    width: 370px
+    height: 180px
+  &-bar
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-radius: 20px
+    background: #23252F
+    padding: 24px
+    margin-bottom: 24px
+    &-item
+      @include text-style
+      margin: 0
+      &:first-child
+        flex-basis: 30%
+  &-cart
+    padding: 24px
+    border-radius: 20px
+    border: 1px solid #535FE6
+    box-shadow: 0px 15px 24px 0px rgba(0, 0, 0, 0.22)
+    margin-bottom: 20px
+    &-top
+      display: flex
+      align-items: center
+      justify-content: space-between
+  &-deposit
+    background: linear-gradient(-49.76deg, rgba(83, 95, 230, 0.84),rgba(32, 193, 207, 0.57))
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+    font-size: 32px
+    font-weight: bold
+    margin-right: 10px
+    &-txt
+      @include text-menu
+      margin-bottom: 0
+  &-btn
+    border-radius: 20px
+    border: none
+    background: rgb(32, 193, 207)
+    padding: 10px 20px
+    color: #fff
+    font-size: 12px
+
+  &-usd
+    background: linear-gradient(-49.76deg, rgba(83, 95, 230, 0.84),rgba(32, 193, 207, 0.57))
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+    font-size: 12px
+    font-weight: 600
+    line-height: 28px
+    letter-spacing: 0px
+    text-align: center
+  &-inv
+    @include text-menu
+    color: #20C1CF
+  &-totl
+    @include text-menu
+
+  &-bottom
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-text-st
+    @include text-style
+    margin-bottom: 0
+    span
+      color: #fff
+  &-comp
+    border-radius: 20px
+    background: rgb(83, 95, 230)
+
+//
+.dropdown-menu.show
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+.drop.show
+  width: 370px
+  height: 180px
+
+//
+.form-check
+  padding-left: 35px
+  margin-bottom: -13px
+  &-input
+    border: 1px solid #535FE6
+    background-color: transparent
+    color: #fff
+.progress
+  width: 195px
+  height: 8px
+  background-color: #23252F
+
+//
+.right
+  margin-bottom: 20px
+  &-cart
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 56px 56px 75px
+    border-radius: 60px 20px 20px 20px
+    background: linear-gradient(-49.76deg, rgba(83, 95, 230, 0.84) 30.312%,rgba(32, 193, 207, 0.57) 88.262%), url(../img/vec1.png) no-repeat 105%, url(../img/vec1.png) no-repeat 108% -50%, url(../img/image.png) no-repeat 30%
+  &-title-block
+    margin-bottom: 33px
+  &-title
+    color: rgb(255, 255, 255)
+    font-size: 72px
+    line-height: 86px
+    letter-spacing: 0px
+    margin-bottom: -10px
+  &-text
+    color: rgb(255, 255, 255)
+    font-size: 40px
+    font-weight: 400
+    line-height: 46px
+    letter-spacing: 0px
+
+  &-graf
+    position: relative
+    padding: 77px 75px
+    background: url(../img/circles.png) no-repeat center
+    margin-bottom: 44px
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 0
+      width: 24px
+      height: 24px
+      background: url(../img/ar-left.png) no-repeat
+      transform: translateY(-50%)
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      right: 0
+      width: 24px
+      height: 24px
+      background: url(../img/ar-right.png) no-repeat
+      transform: translateY(-50%)
+  &-graf-txt
+    text-align: center
+    margin-bottom: 0
+    color: #fff
+  &-line
+    display: flex
+    align-items: center
+    justify-content: space-between
+    p
+      margin-bottom: 0
+      @include text-menu
+  &-info
+    margin-bottom: 0
+    @include text-menu
+    font-size: 12px
+  &-stat
+    padding: 24px 19px 28px
+    border-radius: 20px
+    background: linear-gradient(-49.76deg, rgba(83, 95, 230, 0.84) 29.595%,rgba(32, 193, 207, 0.57) 92.834%)
+    margin-bottom: 64px
+  &-margin
+    position: relative
+    margin-bottom: 30px
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 1px
+      left: 0
+      top: 40px
+      background: #fff
+      opacity: 0.3

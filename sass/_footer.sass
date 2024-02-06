@@ -1,0 +1,69 @@
+
+.footer
+  padding-top: 48px
+  padding-bottom: 30px
+  background: #23252F
+  &-logo
+    margin: 0
+    padding: 0
+  &-content
+    justify-content: space-between
+    margin: 50px 0 30px
+  &-sponsor
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    &-img
+      padding: 10px 0
+  &-menu-item
+    display: block
+    @include text-style
+    text-decoration: none
+    line-height: 35px
+  &-link
+    position: relative
+    color: #535FE6
+    text-decoration: none
+    font-size: 14px
+    border-bottom: 1px dashed #535FE6
+    &::after
+      content: ''
+      position: absolute
+      width: 24px
+      height: 24px
+      top: -3px
+      right: -35px
+      background: url(../img/arrow-r.png) no-repeat
+  &-btn
+    text-align: right
+    padding: 0
+
+  &-text
+    color: #5E647A
+    margin-bottom: 0
+    line-height: 20px
+  &-social
+    text-align: center
+  &-copy, &-copy2
+    color: #fff
+    font-size: 12px
+    margin: 0
+    padding: 0
+    line-height: 20px
+  &-copy2
+    text-align: right
+  &-copyright
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.btn
+  background: transparent
+  font-size: 14px
+  border-radius: 20px
+  border: 1px solid #535FE6
+  padding: 12px 24px
+  &:hover
+    background-color: #535FE6
+/* @media screen and (min-width: 992px) */
